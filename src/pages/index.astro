@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Footer from "../components/Footer.astro";
+import Button  from "../components/Button.astro";
 ---
 <MainLayout title="Julie Fox">
 <section>
@@ -21,12 +22,11 @@ import Footer from "../components/Footer.astro";
 	<p>UX/UI</p>
 	<h3>SUMMARY:</h3>
 	<p>My name is Julie Fox Petersen, I am 23 years old and based in Copenhagen. I am currently studying Multimedia Design at EK while working part-time at & Other Stories. I am passionate about graphic design, fashion, interior design and traveling. </p>
-	<button>CV</button>
+	<Button /> 
 </section>
-<section>
+<section class="bg-[#726961] p-15">
 	<h3>CONTACT</h3>
 	<p>Are you interesting? Send me an email.</p>
-	<button>E-MAIL</button>
+	<button class="bg-[#A2788C] rounded p-3 text-white w-45">E-MAIL</button>
 </section>
-<Footer /> 
 </MainLayout>
