@@ -1,0 +1,126 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
+import Heading from "../components/Heading.astro";
+import Text from "../components/Text.astro";
+import { Image } from "astro:assets";
+import blast from "../assets/images/blast.jpg";
+import dans from "../assets/images/dans.jpg";
+import keys from "../assets/images/keys.jpg";
+import guitar from "../assets/images/guitar.jpg";
+import flerekeys from "../assets/images/flerekeys.jpg";
+import konc1 from "../assets/images/konc1.jpg";
+import konc2 from "../assets/images/konc2.jpg";
+import konc3 from "../assets/images/konc3.jpg";	
+import konc4 from "../assets/images/konc4.jpg";
+import konc5 from "../assets/images/konc5.jpg";
+import konc6 from "../assets/images/konc6.jpg";
+import konc7 from "../assets/images/konc7.jpg";
+import konc8 from "../assets/images/konc8.jpg";
+import konc9 from "../assets/images/konc9.jpg";
+import konc10 from "../assets/images/konc10.jpg";
+import konc11 from "../assets/images/konc11.jpg";
+import konc12 from "../assets/images/konc12.jpg";	
+import konc13 from "../assets/images/konc13.jpg";			
+import konc14 from "../assets/images/konc14.jpg";
+import konc15 from "../assets/images/konc15.jpg";
+---
+<MainLayout title="Titel">
+	<main>
+		<section class="hero grid grid-cols-12 grid-rows-1">	
+			<div class="col-start-1 col-span-2 row-start-1">
+				<Image src={blast} alt="Blast" class="h-full object-cover grayscale"/>
+			</div>
+			<div class="col-start-3 col-span-2 row-start-1">
+				<Image src={keys} alt="keys" class="h-full object-cover grayscale" />
+			</div>
+			<div class="col-start-5 col-span-2 row-start-1">
+				<Image src={guitar} alt="guitar" class="h-full object-cover grayscale" />
+			</div>
+			<div class="col-start-7 col-span-4 row-start-1">
+				<Image src={flerekeys} alt="flerekeys" class="h-full object-cover grayscale"/>
+			</div>
+			<div class="col-start-11 col-span-2 row-start-1">
+				<Image src={dans} alt="dans" class="h-full object-cover grayscale"/>
+			</div>
+			<div class="col-start-1 col-span-12 row-start-1 text-center self-center z-50">
+				<Heading htmlheading="h1" size="large" font="display">Cyanid</Heading>
+				<Text class="text-4xl font-mono"><span class="bg-white  p-4">Nyt album ude nu!</span></Text>
+				<Link href="/lyt/" variant="secondary" size="large">Lyt nu</Link>
+			</div>
+		</section>
+
+		<section class="container mx-auto p-4 mt-20">
+			<Heading htmlheading="h2" size="medium" font="display" stylingclasses="text-center">Livløs</Heading>
+			<Text stylingclasses="text-center">Livløs spiller prætentiøs synthwave. Se os live eller lyt til vores musik!</Text>
+			<div class="grid md:grid-cols-2 mt-10">
+				<div class="">
+					<Heading htmlheading="h3" size="medium" font="display">Kommende koncerter</Heading>
+					<table class="table-auto">
+						<thead>
+							<tr>
+								<th class="px-4 py-2">Dato</th>
+								<th class="px-4 py-2">Sted</th>
+								<th class="px-4 py-2">Billetter</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="border px-4 py-2">1. januar 2025</td>
+								<td class="border px-4 py-2">Rust, København</td>
+								<td class="border px-4 py-2"><Link href="#" variant="textlink">Rust</Link></td>
+							</tr>
+							<tr>
+								<td class="border px-4 py-2">15. februar 2025</td>
+								<td class="border px-4 py-2">Membranen, Aarhus</td>
+								<td class="border px-4 py-2"><Link href="#" variant="textlink">Billetnet</Link></td>
+							</tr>
+								<tr>
+								<td class="border px-4 py-2">25. februar 2025</td>
+								<td class="border px-4 py-2">Hallen, Jyllinge</td>
+								<td class="border px-4 py-2"><Link href="#" variant="textlink">Billetnet</Link></td>
+							</tr>
+								<tr>
+								<td class="border px-4 py-2">15. marts 2025</td>
+								<td class="border px-4 py-2">Fisketorvet, København</td>
+								<td class="border px-4 py-2">(Gratis)</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="">
+					<Heading htmlheading="h3" size="medium" font="display">Seneste Udgivelser</Heading>
+					<Text>Cyanid - hele albummet tilgængelig på <Link href="#" variant="textlink">Spotify</Link> fra 12. august 2025</Text>
+					<Text>Død eller levende - lyt på <Link href="#" variant="textlink">Spotify</Link></Text>
+					<Text>Live fra Bremen - lyt på <Link href="#" variant="textlink">Spotify</Link></Text>
+				</div>
+			</div>
+		</section>
+
+		<section class="container max-w-xl mx-auto p-4 mt-20">
+			<Heading htmlheading="h2" size="medium" font="display">Om os</Heading>
+			<Text stylingclasses="max-w-2xl">Livløs er et synthwave band fra København, der spiller prætentiøs synthwave. Vi har spillet sammen siden 2020 og har udgivet to albums og en EP. Vi spiller live i hele Danmark og har en stor fanskare.</Text>
+			<Text stylingclasses="max-w-2xl">Vi elsker at spille live og møde vores fans. Vi håber at se dig til vores næste koncert!</Text>
+		</section>
+
+		<section class="container mx-auto p-4 mt-20">
+			<div class="md:columns-3">
+				<Image src={konc1} alt="Konc1" class="w-full h-auto mb-4" />
+				<Image src={konc2} alt="Konc2" class="w-full h-auto mb-4" />
+				<Image src={konc3} alt="Konc3" class="w-full h-auto mb-4" />
+				<Image src={konc4} alt="Konc4" class="w-full h-auto mb-4" />		
+				<Image src={konc5} alt="Konc5" class="w-full h-auto mb-4" />
+				<Image src={konc6} alt="Konc6" class="w-full h-auto mb-4" />
+				<Image src={konc7} alt="Konc7" class="w-full h-auto mb-4" />
+				<Image src={konc8} alt="Konc8" class="w-full h-auto mb-4" />
+				<Image src={konc9} alt="Konc9" class="w-full h-auto mb-4" />
+				<Image src={konc10} alt="Konc10" class="w-full h-auto mb-4" />
+				<Image src={konc11} alt="Konc11" class="w-full h-auto mb-4" />
+				<Image src={konc12} alt="Konc12" class="w-full h-auto mb-4" />
+				<Image src={konc13} alt="Konc13" class="w-full h-auto mb-4" />
+				<Image src={konc14} alt="Konc14" class="w-full h-auto mb-4" />
+				<Image src={konc15} alt="Konc15" class="w-full h-auto mb-4" />
+			</div>
+		</section>
+	</main>
+</MainLayout>
