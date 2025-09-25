@@ -4,52 +4,43 @@ import Footer from "../components/Footer.astro";
 import Button  from "../components/Button.astro";
 ---
 <MainLayout title="Digital application">
-<section class="flex flex-col items-center px-6 md:px-16 lg:px-24 py-10">
+<section class="flex flex-col items-center px-6 md:px-16 lg:px-24 py-3">
   <!-- Overskrift -->
   <div class="text-center">
-    <h1 class="text-4xl md:text-6xl lg:text-8xl font-extrabold text-[#68695D] leading-tight tracking-wider">
+    <h1 class="animate-zoom-in text-4xl md:text-6xl lg:text-8xl font-extrabold text-[#68695D] leading-tight tracking-wider">
       MULTIMEDIADESIGN
     </h1>
-    <h1 class="text-4xl md:text-6xl lg:text-8xl font-extrabold text-[#68695D] leading-tight tracking-wider">
+    <h1 class="animate-zoom-in text-4xl md:text-6xl lg:text-8xl font-extrabold text-[#68695D] leading-tight tracking-wider">
       STUDENT
     </h1>
   </div>
-
-  <!-- Billedet med striber baggrund -->
+</section>
   <div class="w-full relative flex justify-center items-center h-72 sm:h-80 md:h-96 lg:h-[28rem]">
-    <!-- Baggrund med 4 vandrette striber -->
     <div class="absolute inset-0"
          style="background: linear-gradient(#68695D 4px, transparent 0) repeat-y; 
                 background-size: 100% 25%; 
                 background-position: 0 12.5%;">
     </div>
-
-    <!-- Billede -->
     <img 
       src="/portræt1.webp" 
       alt="picture of me" 
       class="relative rounded-3xl w-10/12 max-w-sm md:max-w-md lg:max-w-xl">
   </div>
-
-  <p class="font-semibold text-[#68695D] text-lg md:text-xl lg:text-2xl text-center">
-    JULIE FOX E. PETERSEN
-  </p>
+  <p class="font-semibold text-[#68695D] text-lg md:text-xl lg:text-2xl text-center animate-pulse">JULIE FOX E. PETERSEN</p>
 </section>
-
-
   <section>
-    <h2 class="text-center text-[#68695d] ">ABOUT ME</h2>
+    <h2 class="text-center text-[#68695d] mt-20 ">ABOUT ME</h2>
   </section>
 
   <section class="p-6 max-w-4xl mx-auto">
     <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
       <!-- 1. Cirklen med info -->
       <div class="w-full max-w-sm h-[300px] bg-[#726961] rounded-[200px/140px] flex flex-col items-center justify-center text-white text-center px-6 py-6 overflow-hidden break-words">
-        <p class="font-bold">EDUCATION:</p>
+        <h3 class="font-bold">EDUCATION:</h3>
         <p>Multimediadesign student</p>
-        <p class="font-bold mt-5">WORK:</p>
+        <h3 class="font-bold mt-2">WORK:</h3>
         <p>& Other Stories</p>
-        <p class="font-bold mt-5">COMPETENCIES:</p>
+        <h3 class="font-bold mt-2">COMPETENCIES:</h3>
         <p>Graphic Design</p>
         <p>Content Creation</p>
         <p>UX/UI</p>
@@ -65,7 +56,7 @@ import Button  from "../components/Button.astro";
     </div>
   </section>
 
-  <section class="bg-[#726961] text-white py-12 px-6 mt-15 mb-15">
+  <section class="bg-[#726961] text-white py-12 px-6 mt-15">
     <h2 class="text-3xl text-center font-bold mb-6">CV</h2>
 
     <h3 class="text-2xl font-bold uppercase mb-4">Experience</h3>
@@ -157,10 +148,13 @@ import Button  from "../components/Button.astro";
   </section>
 
   <section class="p-10 mb-15 text-center text-[#68695d]">
-    <h3>CONTACT</h3>
+    <h2>CONTACT</h2>
     <p>Are you interesting? Send me an email.</p>
-    <a href="mailto:juliefoxp@gmail.com" class="bg-[#A2788C] rounded-[200px] p-3 text-white w-48 mt-7 inline-block">
-      E-MAIL
-    </a>
+  <a href="mailto:juliefoxp@gmail.com" 
+   class="bg-[#A2788C] rounded-[200px] p-3 text-white w-48 mt-7 inline-block 
+          animate-bounce-slow transition-colors hover:bg-[#68695D]">
+  E-MAIL
+</a>
+
   </section>
 </MainLayout>

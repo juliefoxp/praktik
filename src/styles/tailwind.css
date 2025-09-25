@@ -50,7 +50,7 @@ h1 {
 }
 h2 {
   font-family: "Jomhuria", cursive;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 h3 {
   font-family: "Jomhuria", cursive;
@@ -59,8 +59,35 @@ h3 {
 p {
   font-family: "Proza Libre", sans-serif;
 }
-button,
-button * {
+
+a {
   font-family: "Jomhuria", cursive;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-zoom-in {
+  animation: zoomIn 0.6s ease-out forwards;
+}
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 1s infinite;
 }
