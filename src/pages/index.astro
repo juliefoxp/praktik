@@ -3,30 +3,164 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Footer from "../components/Footer.astro";
 import Button  from "../components/Button.astro";
 ---
-<MainLayout title="Julie Fox">
-<section>
-	<h1>MULTIMEDIADESIGN</h1>
-	<h1>STUDENT</h1>
-	<img src="" alt="">
-	<img src="" alt="">
-	<p>JULIE FOX E. PETERSEN</p>
+<MainLayout title="Digital application">
+<section class="flex flex-col items-center px-6 md:px-16 lg:px-24 py-10">
+  <!-- Overskrift -->
+  <div class="text-center">
+    <h1 class="text-4xl md:text-6xl lg:text-8xl font-extrabold text-[#68695D] leading-tight tracking-wider">
+      MULTIMEDIADESIGN
+    </h1>
+    <h1 class="text-4xl md:text-6xl lg:text-8xl font-extrabold text-[#68695D] leading-tight tracking-wider">
+      STUDENT
+    </h1>
+  </div>
+
+  <!-- Billedet med striber baggrund -->
+  <div class="w-full relative flex justify-center items-center h-72 sm:h-80 md:h-96 lg:h-[28rem]">
+    <!-- Baggrund med 4 vandrette striber -->
+    <div class="absolute inset-0"
+         style="background: linear-gradient(#68695D 4px, transparent 0) repeat-y; 
+                background-size: 100% 25%; 
+                background-position: 0 12.5%;">
+    </div>
+
+    <!-- Billede -->
+    <img 
+      src="/portræt1.webp" 
+      alt="picture of me" 
+      class="relative rounded-3xl w-10/12 max-w-sm md:max-w-md lg:max-w-xl">
+  </div>
+
+  <p class="font-semibold text-[#68695D] text-lg md:text-xl lg:text-2xl text-center">
+    JULIE FOX E. PETERSEN
+  </p>
 </section>
-<section>
-	<h2>ABOUT ME</h2>
-	<img src="" alt="">
-	<p>EDUCATION: MULTIMEDIADESIGN STUDENT (ERHVERVSAKADEMI KØBENHAVN)</p>
-	<p>WORK: & OTHER STORIES (FREDERIKSBERG CENTRET)</p>
-	<p>COMPETENCIES:</p>
-	<p>GRAPHIC DESIGN</p>
-	<p>CONTENT CREATION</p>
-	<p>UX/UI</p>
-	<h3>SUMMARY:</h3>
-	<p>My name is Julie Fox Petersen, I am 23 years old and based in Copenhagen. I am currently studying Multimedia Design at EK while working part-time at & Other Stories. I am passionate about graphic design, fashion, interior design and traveling. </p>
-	<Button /> 
-</section>
-<section class="bg-[#726961] p-15">
-	<h3>CONTACT</h3>
-	<p>Are you interesting? Send me an email.</p>
-	<button class="bg-[#A2788C] rounded p-3 text-white w-45">E-MAIL</button>
-</section>
+
+
+  <section>
+    <h2 class="text-center text-[#68695d] ">ABOUT ME</h2>
+  </section>
+
+  <section class="p-6 max-w-4xl mx-auto">
+    <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+      <!-- 1. Cirklen med info -->
+      <div class="w-full max-w-sm h-[300px] bg-[#726961] rounded-[200px/140px] flex flex-col items-center justify-center text-white text-center px-6 py-6 overflow-hidden break-words">
+        <p class="font-bold">EDUCATION:</p>
+        <p>Multimediadesign student</p>
+        <p class="font-bold mt-5">WORK:</p>
+        <p>& Other Stories</p>
+        <p class="font-bold mt-5">COMPETENCIES:</p>
+        <p>Graphic Design</p>
+        <p>Content Creation</p>
+        <p>UX/UI</p>
+      </div>
+
+      <!-- 2. Cirklen med summary -->
+      <div class="w-full max-w-sm h-[300px] bg-[#726961] rounded-[200px/140px] flex flex-col items-center justify-center text-white text-center px-6 py-6 overflow-hidden break-words">
+        <h3 class="font-bold text-lg mb-2">SUMMARY:</h3>
+        <p class="text-sm leading-relaxed">
+          My name is Julie Fox Petersen, I am 23 years old and based in Copenhagen. I am currently studying Multimedia Design while working part-time at & Other Stories. I dream of finding an internship / job where I can express my creativity through graphic design and content creation, as I have always loved taking photos, making videos, and designing graphics.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#726961] text-white py-12 px-6 mt-15 mb-15">
+    <h2 class="text-3xl text-center font-bold mb-6">CV</h2>
+
+    <h3 class="text-2xl font-bold uppercase mb-4">Experience</h3>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Venstre kolonne -->
+      <div class="space-y-6">
+        <div>
+          <h4 class="font-semibold text-lg">& OTHER STORIES, FIELDS & FRB</h4>
+          <p class="italic text-sm">Sales advisor - Keyholder</p>
+          <div class="flex items-center space-x-2">
+            <div class="flex-grow h-px bg-gray-300"></div>
+            <span class="text-sm text-gray-300 whitespace-nowrap">2022–2025</span>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-lg">LAGKAGEHUSET, CPH AIRPORT</h4>
+          <p class="italic text-sm">Sales assistant</p>
+          <div class="flex items-center space-x-2">
+            <div class="flex-grow h-px bg-gray-300"></div>
+            <span class="text-sm text-gray-300 whitespace-nowrap">2022–2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Højre kolonne -->
+      <div class="space-y-6">
+        <div>
+          <h4 class="font-semibold text-lg">HØJSKOLEOPHOLD I THAILAND</h4>
+          <p class="italic text-sm">Adventure.dk</p>
+          <div class="flex items-center space-x-2">
+            <div class="flex-grow h-px bg-gray-300"></div>
+            <span class="text-sm text-gray-300 whitespace-nowrap">2024</span>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-lg">HØJSKOLEOPHOLD I MELLEMAMERIKA</h4>
+          <p class="italic text-sm">Danskstudiecenter.dk</p>
+          <div class="flex items-center space-x-2">
+            <div class="flex-grow h-px bg-gray-300"></div>
+            <span class="text-sm text-gray-300 whitespace-nowrap">2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="text-2xl font-bold uppercase mt-12 mb-4">Education</h3>
+
+    <div class="space-y-6">
+      <div>
+        <h4 class="font-semibold text-lg">TÅRNBY GYMNASIUM, STX</h4>
+        <p class="italic text-sm">Social studies & English</p>
+        <div class="flex items-center space-x-2">
+          <div class="flex-grow h-px bg-gray-300"></div>
+          <span class="text-sm text-gray-300 whitespace-nowrap">2019–2022</span>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg">ERHVERVSAKADEMI KØBENHAVN</h4>
+        <p class="italic text-sm">Multimedia design</p>
+        <div class="flex items-center space-x-2">
+          <div class="flex-grow h-px bg-gray-300"></div>
+          <span class="text-sm text-gray-300 whitespace-nowrap">2024–2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-8 text-center text-[#68695d]">COMPETENCIES:</h2>
+
+    <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+      <!-- Oval 1 med tekst -->
+      <div class="w-full max-w-sm h-[300px] bg-[#726961] rounded-[200px/140px] flex flex-col items-center justify-center text-white text-center px-6 py-6 overflow-hidden break-words">
+        <h3 class="font-bold text-lg mb-3">GRAPHIC DESIGN</h3>
+        <p class="text-sm leading-relaxed">
+          I dream of working with graphic design because I have always had a strong sense of colors and typography, combined with a passion for creating user-friendly designs that are both beautiful and functional. I have experience with Figma, Canva, Adobe package, as well as HTML and CSS.
+        </p>
+      </div>
+
+      <!-- Oval 2 med tekst -->
+      <div class="w-full max-w-sm h-[300px] bg-[#726961] rounded-[200px/140px] flex flex-col items-center justify-center text-white text-center px-6 py-6 overflow-hidden break-words">
+        <h3 class="font-bold text-lg mb-3">CONTENT CREATION</h3>
+        <p class="text-sm leading-relaxed">
+          I have a strong passion for content creation because I love taking photos, shooting videos, and editing them. I’m very enthusiastic about social media and have solid experience using most platforms, as well as with editing tools like CapCut.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-10 mb-15 text-center text-[#68695d]">
+    <h3>CONTACT</h3>
+    <p>Are you interesting? Send me an email.</p>
+    <a href="mailto:juliefoxp@gmail.com" class="bg-[#A2788C] rounded-[200px] p-3 text-white w-48 mt-7 inline-block">
+      E-MAIL
+    </a>
+  </section>
 </MainLayout>
