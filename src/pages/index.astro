@@ -125,7 +125,60 @@ import Button  from "../components/Button.astro";
       </div>
     </div>
   </section>
+<section class="max-w-6xl mx-auto px-4 py-12">
+  <div class="grid gap-4 md:grid-cols-2 md:gap-8 items-center">
+    
+    <!-- Venstre: Kamera + Video -->
+    <div class="relative w-full">
+      <img src="/Kamera.png" alt="Kamera frame" class="w-full relative z-10 pointer-events-none">
 
+      <!-- Video-wrapper der klipper alt udenfor -->
+      <div class="absolute top-[25%] left-[10%] w-[53%] h-[50%] overflow-hidden rounded-md z-0">
+        <video
+          src="/Video_pinterest.mov"
+          autoplay
+          loop
+          muted
+          playsinline
+          class="w-full h-full object-cover"
+        ></video>
+      </div>
+    </div>
+
+    <!-- Højre: Tekst -->
+    <div class="flex flex-col justify-center space-y-4 text-center md:text-left">
+  <h2 class="text-3xl font-bold text-[#68695d]">SHOWCASE OF MY WORK</h2>
+  
+  <p class="text-base font-normal">
+    <a href="https://eksamensprojektfreds.netlify.app/" target="_blank" rel="noopener noreferrer" 
+       class="relative text-[#68695d] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#68695d] before:transition-all before:duration-300 hover:before:w-full">
+      EXAM PROJECT FOR FRED'S CAFE
+    </a>
+  </p>
+  
+  <p class="text-base font-normal">
+    <a href="https://instant-day1.netlify.app/" target="_blank" rel="noopener noreferrer" 
+       class="relative text-[#68695d] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#68695d] before:transition-all before:duration-300 hover:before:w-full">
+      WEBSITE FOR INSTANT DAY
+    </a>
+  </p>
+  
+  <p class="text-base font-normal">
+    <a href="https://teamprojekt-gruppe1.github.io/team_projekt/" target="_blank" rel="noopener noreferrer" 
+       class="relative text-[#68695d] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#68695d] before:transition-all before:duration-300 hover:before:w-full">
+      WEBSITE FOR KEA KEEP EATING AFFORDABLE
+    </a>
+  </p>
+  
+  <p class="text-base font-normal">
+    <a href="https://juliefoxpdk-kea-05-indhold-virksomhed.netlify.app/" target="_blank" rel="noopener noreferrer" 
+       class="relative text-[#68695d] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#68695d] before:transition-all before:duration-300 hover:before:w-full">
+      WEBSITE FOR A GREEK RESTAURANT
+    </a>
+  </p>
+</div>
+
+</section>
   <section class="p-6 max-w-4xl mx-auto">
     <h2 class="text-2xl font-bold mb-8 text-center text-[#68695d]">COMPETENCIES:</h2>
 
