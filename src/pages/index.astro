@@ -178,9 +178,17 @@ import Button  from "../components/Button.astro";
   </p>
 </div>
 <section>
-<div class="grid gap-4 grid-cols-1 md:grid-cols-2">
-  <video src="video1.mp4" controls class="w-full rounded-lg"></video>
-  <video src="video2.mp4" controls class="w-full rounded-lg"></video>
+<div class="flex justify-center items-center min-h-screen">
+  <div class="grid grid-cols-2 gap-4">
+    <video class="w-full h-auto" controls>
+      <source src="video1.mp4" type="video/mp4">
+      Din browser understøtter ikke video.
+    </video>
+    <video class="w-full h-auto" controls>
+      <source src="video2.mp4" type="video/mp4">
+      Din browser understøtter ikke video.
+    </video>
+  </div>
 </div>
 
 
