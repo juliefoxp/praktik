@@ -177,13 +177,17 @@ import Button  from "../components/Button.astro";
     </a>
   </p>
 </div>
-<section class="flex justify-center items-center h-screen bg-gray-100">
-  <div class="grid grid-cols-1 gap-4 max-w-4xl w-full p-4">
+<section class="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+  <div class="grid grid-cols-1 gap-4 max-w-4xl w-full">
 
-    <!-- Øverste: Video -->
-    <div class="w-full">
+    <!-- Øverste række: 2 videoer -->
+    <div class="grid grid-cols-2 gap-4">
       <video class="w-full rounded-lg" controls>
-        <source src="video.mp4" type="video/mp4">
+        <source src="video1.mp4" type="video/mp4">
+        Din browser understøtter ikke video.
+      </video>
+      <video class="w-full rounded-lg" controls>
+        <source src="video2.mp4" type="video/mp4">
         Din browser understøtter ikke video.
       </video>
     </div>
@@ -201,6 +205,7 @@ import Button  from "../components/Button.astro";
     </div>
 
   </div>
+</section>
 </section>
   <section p-6 mx-auto>
     <h2 class="text-2xl font-bold mb-8 text-center text-[#68695d]">COMPETENCIES:</h2>
