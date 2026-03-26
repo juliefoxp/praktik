@@ -177,18 +177,32 @@ import Button  from "../components/Button.astro";
     </a>
   </p>
 </div>
-</section>
 <!-- Video Grid Section -->
-<section class="w-full mt-10">
+<section class="w-full mt-10 flex justify-center">
   <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
-    <video
-          src="/video_1.mov" aspect-video w-[300px] mx-auto>
-          autoplay
-          loop
-          muted
-          playsinline
-          class="w-full h-full object-cover"
-        ></video>
+    <!-- Video 1 -->
+    <div class="aspect-video w-[300px] mx-auto">
+      <video 
+        src="/video_1.mov" 
+        autoplay 
+        loop 
+        muted 
+        playsinline 
+        class="w-full h-full object-cover rounded-lg">
+      </video>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="aspect-video w-[300px] mx-auto">
+      <video 
+        src="/video_2.mov" 
+        autoplay 
+        loop 
+        muted 
+        playsinline 
+        class="w-full h-full object-cover rounded-lg">
+      </video>
+    </div>
   </div>
 </section>
 
